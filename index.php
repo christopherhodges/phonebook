@@ -68,7 +68,7 @@
                 <input type="text" id="first_name" name="first_name" placeholder="First Name" />
                 <input type="text" id="last_name" name="last_name" placeholder="Last Name" />
                 <input type="tel" id="phone_number" name="phone_number" placeholder="(555) 555-5555" />
-                <input type="submit" />
+                <input type="submit" value="Add Person" />
                 <input type="reset" value="Cancel" />
             </form>
         </div>
