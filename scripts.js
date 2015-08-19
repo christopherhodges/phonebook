@@ -118,7 +118,7 @@ function addPerson( first, last, phone ){
 
             // Hide the modal
             hideModal();
-            
+
             $('#modal').removeClass('loading');
 
             // clone the template
@@ -171,7 +171,7 @@ function sortPeople(){
     var mylist = $('#list');
     var listitems = mylist.children('.person').get();
     listitems.sort(function(a, b) {
-       return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
+       return $(a).attr('data-name').toUpperCase().localeCompare($(b).attr('data-name').toUpperCase());
     })
     $.each(listitems, function(idx, itm) { mylist.append(itm); });
 }
