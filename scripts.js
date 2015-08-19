@@ -40,6 +40,7 @@ $('form').submit(function(e){
 function showModal(){
 
     //reset
+    $('#modal').removeClass('loading');
     $('#modal [name="first_name"]').val('');
     $('#modal [name="last_name"]').val('');
     $('#modal [name="phone_number"]').val('');
