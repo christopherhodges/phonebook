@@ -195,8 +195,8 @@ form {
     }
     &.template {
         opacity: 0;
-        transform: translateX( 500%);
-        -webkit-transform: translateX( 500%);
+        transform: translateX( -500%);
+        -webkit-transform: translateX( -500%);
     }
     &.remove {
         -webkit-animation-duration: 1s;

@@ -189,8 +189,8 @@ form {
         margin: 1rem 0; } }
   .person.template {
     opacity: 0;
-    transform: translateX(500%);
-    -webkit-transform: translateX(500%); }
+    transform: translateX(-500%);
+    -webkit-transform: translateX(-500%); }
   .person.remove {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
