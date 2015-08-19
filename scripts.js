@@ -146,6 +146,12 @@ function addPerson( first, last, phone ){
 }
 
 function removePerson( id ){
+
+    var person = $('[data-id="'+ id + '"]');
+
+    // add class to animate removal
+    person.addClass('remove');
+
     $.ajax({
         type: "POST",
         data : {
@@ -155,14 +161,10 @@ function removePerson( id ){
         url: localized_vars.ajax_url,
         success: function( response ){
 
-            var person = $('[data-id="'+ id + '"]');
-
-            // add class to animate removal
-            person.addClass('remove');
-
+            console.log(response);
+            
             // Remove from dom
             setTimeout(function(){ person.remove() }, 1000);
-
         }
     })
 }
