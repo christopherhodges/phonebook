@@ -168,7 +168,7 @@ function sortPeople(){
 }
 
 // Click to add a new person
-$('[href="#add"]').click(function(){
+$('[href="#add"]').click(function(e){
     e.preventDefault();
     showModal();
 })
