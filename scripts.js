@@ -118,6 +118,8 @@ function addPerson( first, last, phone ){
 
             // Hide the modal
             hideModal();
+            
+            $('#modal').removeClass('loading');
 
             // clone the template
             var new_person = $('.template').clone();
