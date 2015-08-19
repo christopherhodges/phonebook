@@ -1,6 +1,8 @@
 
 // Click to remove a person
-$('#list').on('click', '[href="#del"]', function(){
+$('#list').on('click', '[href="#del"]', function(e){
+
+    e.preventDefault();
 
     // Remove person
     removePerson( $(this).parents('.person').attr('data-id') );
@@ -167,6 +169,7 @@ function sortPeople(){
 
 // Click to add a new person
 $('[href="#add"]').click(function(){
+    e.preventDefault();
     showModal();
 })
 
