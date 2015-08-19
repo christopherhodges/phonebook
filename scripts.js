@@ -135,7 +135,7 @@ function addPerson( first, last, phone ){
 
             // and sort
             sortPeople();
-        }
+        },
         done: function(){
             $('#modal').removeClass('loading');
         }
