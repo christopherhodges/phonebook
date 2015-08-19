@@ -101,6 +101,9 @@ function validateForm(){
 }
 
 function addPerson( first, last, phone ){
+
+    $('#modal').addClass('loading');
+
     $.ajax({
         type: "POST",
         data : {
@@ -132,6 +135,9 @@ function addPerson( first, last, phone ){
 
             // and sort
             sortPeople();
+        }
+        done: function(){
+            $('#modal').removeClass('loading');
         }
     })
 }

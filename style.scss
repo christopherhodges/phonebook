@@ -115,6 +115,14 @@ html {
     h1 {
         padding: 1em 0;
     }
+	&.loading {
+		form {
+			opacity: .2;
+			input {
+				pointer-events: none;
+			}
+		}
+	}
 }
 
 form {

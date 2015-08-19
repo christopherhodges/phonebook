@@ -125,6 +125,10 @@ html {
   text-align: center; }
   #modal h1 {
     padding: 1em 0; }
+  #modal.loading form {
+    opacity: .2; }
+    #modal.loading form input {
+      pointer-events: none; }
 
 form {
   padding-top: 1rem; }
